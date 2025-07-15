@@ -3,20 +3,13 @@ import '../styles/ExampleSection.css';
 
 const ExampleSection: React.FC = () => (
   <section className="example-section">
-    <button className="example-section__btn">EXAMPLE SECTION</button>
-    <div className="example-section__headline">
-      <span>Lorem </span>
-      <span className="headline-green">ipsum</span>
-      <span className="headline-gold"> dolor</span>
-      <span className="headline-purple"> sit</span>
-      <span className="headline-blue"> amet</span>
-      <span className="headline-link"> consectetur adipiscing elit etiam molestie ex vel</span>
-      massa lacinia ultricies.
+    <div className="page-width">
+      <button className="example-section__btn">EXAMPLE SECTION</button>
+      <h3 className="example-section__headline">
+        <span>Lorem</span> ipsum dolor sit amet  consectetur adipiscing elit etiam molestie ex vel <span>massa lacinia ultricies. Suspendisse lobortis vehicula eros, sed sodales eros mollis eget. Morbi vitae libero in nunc sodales.</span>
+      </h3>
+      <button className="example-section__see-more">SEE MORE</button>
     </div>
-    <div className="example-section__desc">
-      Suspendisse lobortis vehicula eros, sed sodales eros mollis eget. Morbi vitae libero in nunc sodales.
-    </div>
-    <button className="example-section__see-more">SEE MORE</button>
   </section>
 );
 
