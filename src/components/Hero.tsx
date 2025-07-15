@@ -79,18 +79,15 @@ const Hero: React.FC = () => {
         style={{ objectFit: 'cover', width: '100%', height: '100%' }}
       />
       <div className="hero__overlay" />
-      <div className="hero__content">
+      <div className="hero__content page-width">
         <button className="hero__tag">LOREM IPSUM</button>
         <h1 className="hero__headline">
-          <span className="headline-green">Lorem</span>
-          <span className="headline-gold"> Ipsum</span>
-          <span className="headline-purple"> Dolor</span>
-          <span className="headline-blue"> Sit amet</span>
+          Lorem Ipsum Dolor Sit amet          
         </h1>
-        <div className="hero__subheadline">
+        <h1 className="hero__headline hero__subheadline">
           Donec cursus ligula diam, nec congue augue ultrices nec.
-        </div>
-        <div className="media-player">
+        </h1>
+        <div className="media-player page-width">
           <button className="media-player__play" onClick={togglePlay} aria-label={playing ? 'Pause' : 'Play'}>
             {playing ? <span className="icon-pause" /> : <span className="icon-play" />}
           </button>
@@ -109,7 +106,7 @@ const Hero: React.FC = () => {
               style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', opacity: 0, cursor: 'pointer' }}
             />
           </div>
-          <span className="media-player__time">{formatTime(current)}<span style={{ opacity: 0.7 }}> / {formatTime(duration)}</span></span>
+          <span className="media-player__time">{formatTime(current)}</span>
         </div>
       </div>
     </section>
